@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolaborasi Budaya Nusantara | Kelompok 4</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./img/bendera indonesia.webp"
+      type="image/webp"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header container" id="header">
+      <nav
+        class="navbar"
+        id="navbar"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <a href="#home" class="nav__logo"> Nusantara </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <i class="fa-solid fa-house-chimney nav-icon"></i>
+              <a class="nav__link" href="#home">Beranda</a>
+            </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-circle-info nav-icon"></i>
+              <a class="nav__link" href="#about">Tentang</a>
+            </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-scroll nav-icon"></i>
+              <a class="nav__link" href="#artikel">Blog</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a class="nav__link" href="#">Kontak</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="content">
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Keragaman Budaya <br />
+          <!-- Nusantara -->
+        </h1>
+        <p class="desc" data-aos="fade-down" data-aos-duration="1500">
+          Indonesia kaya akan keberagaman budaya. Setiap daerah punya ciri khas
+          sendiri, namun keberagaman ini justru menyatukan kita. Lewat
+          pertukaran budaya, seperti seni dan kuliner, kita semakin kaya dan
+          unik sebagai bangsa
+        </p>
+      </div>
+      <div class="hero-img">
+        <img
+          src="./img/GambarPadaHome.png"
+          alt=""
+          width="500"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      class="about section-container"
+      id="about"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="content">
+        <div
+          class="purpose-text"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <h1 class="title">Kolaborasi Budaya Nusantara</h1>
+          <p>
+            Perpaduan budaya adalah proses di mana dua atau lebih budaya yang
+            berbeda saling berinteraksi, bekerja sama, dan berbagi nilai-nilai,
+            tradisi, serta kebiasaan mereka. Tujuannya adalah menciptakan
+            sesuatu yang baru, tanpa menghilangkan identitas masing-masing
+            budaya yang terlibat. Kolaborasi ini bisa terlihat dalam berbagai
+            aspek kehidupan, seperti seni, musik, kuliner, hingga kehidupan
+            sosial.
+          </p>
+        </div>
+        <img
+          src="./img/Gambarbali.jpg"
+          alt="logo-garuda"
+          width="700"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        />
+      </div>
+    </section>
+    <!-- <div class="image" data-aos="fade-left" data-aos-duration="1500">
+    </div> -->
+
+    <!-- Artikel -->
+    <section class="artikel section-container" id="artikel">
+      <div class="title-desc">
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Artikel
+        </h1>
+        <p class="desc" data-aos="fade-up" data-aos-duration="1500">
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          assumenda! -->
+          Anda bisa membaca artikel mengenai perpaduan budaya di Indonesia pada
+          beberapa artikel di bawah ini!
+        </p>
+      </div>
+
+      <div class="card-artikel">
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
+          <div class="card-image">
+            <img
+              src="./img/GambarBlog/Kuliner/HeaderKuliner.jpg"
+              alt="logo-garuda"
+              width="300"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kolaborasi Budaya diBidang Kuliner</h3>
+            <p class="card-text">
+              Indonesia, dengan kekayaan budaya dan sejarahnya yang panjang,
+              memiliki khazanah...
+            </p>
+            <a href="./blog1.html" class="card-link">Read More</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
+          <div class="card-image">
+            <img
+              src="./img/GambarBlog/Pertunjukan/Header.jpeg"
+              alt="logo-garuda"
+              width="300"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">
+              Kolaborasi Budaya diBidang Seni Pertunjukan
+            </h3>
+            <p class="card-text">
+              Indonesia, dengan kekayaan budaya dan tradisi yang melimpah,
+              memiliki seni...
+            </p>
+            <a href="./blog2.html" class="card-link">Read More</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
+          <div class="card-image">
+            <img
+              src="./img/GambarBlog/Arsitektur/borobudur.webp"
+              alt="logo-garuda"
+              width="300"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kolaborasi Budaya diBidang Arsitektur</h3>
+            <p class="card-text">
+              Indonesia, dengan kekayaan budaya dan sejarahnya yang panjang,
+              memiliki...
+            </p>
+            <a href="./blog3.html" class="card-link">Read More</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
+          <div class="card-image">
+            <img
+              src="./img/GambarBlog/Fasion/pakaian adat.webp"
+              alt="logo-garuda"
+              width="300"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kolaborasi Budaya diBidang Pakaian</h3>
+            <p class="card-text">
+              Pakaian adat bukan sekadar identitas suatu daerah, tetapi juga...
+            </p>
+            <a href="./blog4.html" class="card-link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nama Kelompok -->
+    <section class="kelompok section-container" id="kelompok">
+      <div class="title-desc">
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Nama Kelompok
+        </h1>
+        <p class="desc" data-aos="fade-up" data-aos-duration="1500">
+          Berikut adalah nama kelompok 4
+        </p>
+      </div>
+
+      <div class="content">
+        <div class="profile-card">
+          <div class="profile-content">
+            <h2 class="profile-name">Asyam Bilal Amanullah</h2>
+            <p>Nomor absen 5</p>
+          </div>
+          <div class="profile-content">
+            <h2 class="profile-name">Haritsa Wicaksono</h2>
+            <p>Nomor absen 12</p>
+          </div>
+          <div class="profile-content">
+            <h2 class="profile-name">Kelvin Ananda Mirden</h2>
+            <p>Nomor absen 16</p>
+          </div>
+          <div class="profile-content">
+            <h2 class="profile-name">M. Fadhil Alvan Syah</h2>
+            <p>Nomor absen 22</p>
+          </div>
+          <div class="profile-content">
+            <h2 class="profile-name">Raya Hadi Ananta</h2>
+            <p>Nomor absen 27</p>
+          </div>
+          <div class="profile-content">
+            <h2 class="profile-name">Ridwan Imam Ghozali H</h2>
+            <p>Nomor absen 28</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy 2025 SMKN 1 KEDIRI XI TKJ 1</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
