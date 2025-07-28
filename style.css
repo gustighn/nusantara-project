@@ -92,12 +92,18 @@ i {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(3px);
   border-radius: 50px;
   transition: all 2s;
+  position: fixed;
+  top: 10px;
+  left: 2.5%;
+  width: 95%;
+  z-index: 999;
 }
 
-.navbar.fixed {
+/* .navbar.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +112,7 @@ i {
   border-radius: 0;
   height: 6rem;
   padding: 0 4rem;
-}
+} */
 
 .navbar .nav__logo {
   font-size: var(--font-size-2xl);
@@ -120,13 +126,32 @@ i {
 }
 
 .navbar .nav__menu .nav__list .nav__link {
+  position: relative;
   font-size: var(--font-size-md);
   color: white;
+  transition: all .2s ease-out;
 }
 
 .navbar .nav__menu .nav__list .nav__link:hover {
-  color: var(--color-red);
+  color: var(--color-text-muted);
 }
+
+.navbar .nav__menu .nav__list .nav__link::before {
+  content: '';
+  width: 0;
+  height: 1.8px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transition: all .2s ease-out;
+}
+
+.navbar .nav__menu .nav__list .nav__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
 
 .hamburger {
   display: none;
