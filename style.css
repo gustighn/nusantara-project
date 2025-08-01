@@ -152,6 +152,17 @@ i {
   left: 0;
 }
 
+.navbar .nav__menu .nav__list .nav__link.login_button {
+  background-color: white;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.navbar .nav__menu .nav__list .login_button::before {
+  width: 0;
+  height: 0;
+}
 
 .hamburger {
   display: none;
@@ -565,9 +576,9 @@ footer {
     cursor: pointer;
   }
 
-  .navbar {
+  /* .navbar {
     position: relative;
-  }
+  } */
 
   .navbar .nav__menu {
     position: absolute;
@@ -606,6 +617,13 @@ footer {
   .navbar .nav__menu .nav__list .nav__link {
     font-size: var(--font-size-lg);
     color: white;
+  }
+
+  .navbar .nav__menu .nav__list .nav__link.login_button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border-radius: 0;
   }
 
   /* Hero */
