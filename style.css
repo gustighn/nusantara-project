@@ -182,7 +182,7 @@ i {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  padding-top: 0;
+  padding-top: 20px;
   transition: all 1s;
 }
 
@@ -652,6 +652,7 @@ footer {
 
   .hero.container {
     flex-direction: column;
+    padding-top: 80px;
   }
 
   .hero .hero-img img {
