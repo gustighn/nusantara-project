@@ -96,7 +96,7 @@ i {
   align-items: center;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.644);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   border-radius: 50px;
   transition: all 2s;
   position: fixed;
@@ -142,7 +142,8 @@ i {
 .navbar .nav__menu .nav__list .nav__link::before {
   content: '';
   width: 0;
-  height: 1.8px;
+  height: 2.5px;
+  border-radius: 5px;
   background-color: white;
   position: absolute;
   top: 100%;
@@ -173,6 +174,162 @@ i {
 
 .nav__menu .nav__list .nav-icon {
   display: none;
+}
+
+/* Login Form */
+.form-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 440px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  transition: all .2s ease;
+  overflow: hidden;
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 15%;
+  transition: all .2s ease;
+}
+
+.wrapper .form-box.login {
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  transform: translateX(0);
+}
+
+.form-box h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-weight: 600;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 35px 0 5px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box .icon {
+  position: absolute;  
+  right: 8px;
+  line-height: 57px;
+}
+
+.input-box .icon i {
+  color: black;
+}
+
+.remember-forgot {
+  font-size: .8em;
+  font-weight: 500;
+  margin: 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+}
+
+.remember-forgot label input {
+  accent-color: #424242;
+  margin-right: 5px;
+}
+
+.form-box form .remember-forgot a,
+.form-box form .login-register a {
+  color: salmon;
+}
+
+.form-box form .remember-forgot a:hover,
+.form-box form .login-register a:hover {
+  text-decoration: underline;
+}
+
+.form-box form .remember-forgot a:active,
+.form-box form .login-register a:active {
+  color: red;
+}
+
+button.btn {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #3b3b3b;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600; 
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+button.btn:hover {
+  background-color: #585858;
+}
+
+.login-register {
+  font-size: .9rem;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
 }
 
 /* hero */
@@ -421,7 +578,18 @@ i {
 }
 
 .profile-card .profile-content {
+  display: flex;
   text-align: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.profile-card .profile-content i {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  margin: 5px;
+
 }
 
 /* Footer */
@@ -441,9 +609,8 @@ footer {
 @media (max-width: 1200px) {
   .navbar {
     padding: 2rem 2rem;
-    width: 100%;
-    height: 20px;
-    background-color: black;
+    width: 95%;
+    height: 40px;
     border-radius: 50px;
   }
 
@@ -577,9 +744,9 @@ footer {
     padding: 1rem;
   }
 
-  html {
+  /* html {
     overflow-x: hidden;
-  }
+  } */
 
   /* Navbar */
   .hamburger {
@@ -596,21 +763,21 @@ footer {
   .navbar .nav__menu {
     position: absolute;
     top: 5.5rem;
-    right: -100rem;
+    right: -150px;
     padding: 30px;
-    background-color: black;
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 40px 0 0 40px ;
     z-index: 999;
-    transition: all 0.5s;
+    transition: all 0.3s ease-out;
   }
 
   .navbar .nav__menu.active {
-    right: 0;
+    right: -20px;
   }
 
-  .navbar.fixed .nav__menu.active {
+  /* .navbar.fixed .nav__menu.active {
     right: 10px;
-  }
+  } */
 
   .navbar .nav__menu .nav__list {
     flex-direction: column;
@@ -709,5 +876,15 @@ footer {
 
   .blog .content p {
     text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 360px;
+  }
+
+  .wrapper .form-box {
+    padding: 10%;
   }
 }
